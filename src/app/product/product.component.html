@@ -1,0 +1,14 @@
+<div class="d-flex align-items stretch">
+    <div class="card card-img-top">
+        <img [src]="prod.imageUrl" class="imageview">
+        <div class="card-body ">
+            <h5 class="card-title">{{ prod.title | uppercase}}</h5>
+            <p class="card-text">{{prod.description}}</p>
+            <p class="card-text">{{prod.price}}</p>
+            <a href="#" *ngIf="prod.isAvailable" class="btn btn-primary" (click)="addToCart()">Add to cart</a>
+            <a href="#" class="btn btn-primary ml-2" (click)="addToCart()">Buy</a>
+            <p>{{prod | json}}</p>
+
+        </div>
+    </div>
+</div>

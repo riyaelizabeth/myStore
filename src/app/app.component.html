@@ -1,144 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">My store</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-     </button>
+<app-header></app-header>
 
-    <div class="collapse navbar-collapse  d-flex justify-content-end  fixed-top" id="navbarSupportedContent">
+<div class="container mt-5">
+    <app-search></app-search>
+    <div class="row">
+        <app-product *ngFor="let a of productsArray" class="col-4" [prod]="a"></app-product>
 
-        <ul class="navbar-nav ">
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Checkout</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li> -->
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
+        <!-- <app-product class="col-4" [prod]="productsArray[1]"></app-product>
+
+        <app-product class="col-4" [prod]="productsArray[1]"></app-product> -->
+
 
     </div>
-
-
-</nav>
-<div class="container mt-3 ">
-    <input class="form-control form-control-lg" type="text" placeholder="search here">
-    <div class="row">
-        <div class="col-sm-4 d-flex align-items stretch">
-            <div class="card">
-                <img src="assets/bag1.jpg" class="card-img-top" alt="bag1.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 d-flex align-items stretch">
-            <div class="card">
-                <img src="assets/bag2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 d-flex align-items stretch">
-            <div class="card">
-                <img src="assets/bag4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <div class="col-sm-4 d-flex align-items stretch">
-                <div class="card">
-                    <img src="assets/bag4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 d-flex align-items stretch">
-                <div class="card">
-                    <img src="assets/bag4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 d-flex align-items stretch">
-                <div class="card">
-                    <img src="assets/bag4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4  d-flex align-items stretch">
-                <div class="card">
-                    <img src="assets/bag4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 d-flex align-items stretch ">
-                <div class="card">
-                    <img src="assets/bag3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 d-flex align-items stretch">
-                <div class="card">
-                    <img src="assets/bag4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <p class="footer  text-right">&copy; Copyright 2019 HTML</p>
-
-
-        </div>
+</div>
+<app-footer></app-footer>
