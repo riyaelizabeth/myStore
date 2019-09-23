@@ -7,14 +7,14 @@
     <div class="collapse navbar-collapse  d-flex justify-content-end  " id="navbarSupportedContent">
 
         <ul class="navbar-nav ">
-            <li class="nav-item ">
-                <a class="nav-link" href="#" style="color: rgb(48, 67, 148) ; font-size:20px">Home </a>
+            <li class="nav-item " routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" routerLink="">Home </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: rgb(48, 67, 148) ; font-size:20px">Products</a>
+            <li class="nav-item" routerLinkActive="active" exact="true" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" routerLink="product">Products</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: rgb(48, 67, 148) ; font-size:20px">Checkout</a>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" routerLink="/checkout">Checkout</a>
             </li>
             <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

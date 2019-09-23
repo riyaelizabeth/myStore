@@ -9,7 +9,7 @@ import { ProductService } from './services/product.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-productsArray: Product[] = [];
+// productsArray: Product[] = [];
   // firstProduct: Product = {
   //   Image: 'assets/bag1.jpg',
   //   name: 'Women\'s bag',
@@ -26,14 +26,14 @@ productsArray: Product[] = [];
   //   alt: 'no image',
   //   isAvailable: false
   // };
-
-  constructor(private productservices: ProductService ) {
+        constructor() {}
+  // constructor(private productservices: ProductService ) {
     // this.productsArray = this.productservices.getProducts();
     // this.productsArray.push(this.secondProduct);
-    this.productservices.getProducts().subscribe((res: Product[]) =>{
-      this. productsArray = res;
-    });
+    // this.productservices.getProducts().subscribe((res: Product[]) => {
+      // this. productsArray = res;
+    // });
 
-  }
+  // }
   title = 'my-store';
 }

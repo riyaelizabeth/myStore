@@ -8,6 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { ProductComponent } from './product/product.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -17,11 +21,15 @@ import { FooterComponent } from './footer/footer.component';
     SearchComponent,
     ProductComponent,
     FooterComponent,
+    ProductListComponent,
+    ProductdetailsComponent,
+    CheckoutComponent,
     ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
